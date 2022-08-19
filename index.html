@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a music player with a simple and intuitive interface. It displays the most popular songs, as well as the most recent ones."
+    />
+    <meta name="keywords" content="Music player" />
+    <meta name="author" content="Su Myat Aung" />
+    <title>Music player</title>
+    <!--css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- fontsawrsome kit  -->
+    <script
+      src="https://kit.fontawesome.com/9f5c644af7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts link  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- icon -->
+      <div class="icon">
+        <i class="fa-solid fa-music"></i>
+        <h1>Music Player</h1>
+      </div>
+
+      <!-- main -->
+      <div class="allsongs">
+        <!-- songs -->
+        <ul id="listOfSongs"></ul>
+        <!-- audio btns -->
+        <div class="controls">
+          <audio src="" id="audio"></audio>
+          <div id="time">00:00 / 00:00</div>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="btns">
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-pause" id="pause"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

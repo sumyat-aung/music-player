@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #18192a;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #18192a;
+}
+
+.icon {
+  display: flex;
+  margin: 30px 0 0 30px;
+  width: 300px;
+  justify-content: space-between;
+  text-align: center;
+  height: 70px;
+}
+
+.icon i {
+  color: #a5c3c7;
+  font-size: 38px;
+  padding: 10px;
+}
+
+.icon h1 {
+  color: #a5c3c7;
+  font-size: 40px;
+  font-family: "Itim", cursive;
+}
+
+.allsongs {
+  width: 100%;
+  height: 75%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#listOfSongs {
+  width: 50%;
+  height: 80%;
+  overflow-x: scroll;
+}
+
+#listOfSongs::-webkit-scrollbar {
+  display: none;
+}
+
+#listOfSongs li {
+  color: #a5c3c7;
+  border-bottom: 0.6px solid #a5c3c72a;
+  padding: 14px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+}
+
+#listOfSongs li i {
+  font-size: 0.9rem;
+  margin-right: 10px;
+  transition: all 0.4s linear;
+}
+
+#listOfSongs li i:hover {
+  color: #a5c3c78e;
+}
+
+.controls {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 50%;
+}
+
+#time {
+  color: #a5c3c7;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #a5c3c7;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: rgba(12, 27, 39, 0.692);
+}
+
+.btns {
+  color: #a5c3c7;
+  display: flex;
+  font-size: 22px;
+  margin-top: 13px;
+  justify-content: space-around;
+}
+
+.btns i {
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.btns i:hover {
+  color: #a5c3c798;
+}
+
+#pause {
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  #listOfSongs,
+  .controls {
+    width: 70%;
+  }
+
+  #listOfSongs li {
+    cursor: default;
+  }
+  .btns i {
+    cursor: default;
+  }
+}
+@media all and (max-width: 650px) {
+  #listOfSongs,
+  .controls {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 490px) {
+  #listOfSongs,
+  .controls {
+    width: 95%;
+  }
+
+  #listOfSongs li {
+    font-size: 0.9rem;
+    padding: 14px 10px;
+  }
+  .icon {
+    margin: 30px 0 0 10px;
+  }
+}
