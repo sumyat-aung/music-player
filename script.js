@@ -251,3 +251,13 @@ function playSongs() {
   audio.src = songsSrc;
   audio.play();
 }
+
+// next song by song ended
+
+audio.onended = function () {
+  songsNum += 1;
+  playSongs();
+
+  isPlaying = true;
+  playAndPuse();
+};
